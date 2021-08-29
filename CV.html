@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <style>
+    *,
+    *::after,
+    *::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
+
+    body{
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background-color: #1B1B1E;
+      margin: 0.5rem;
+    }
+
+    main{
+      flex-grow: 1;
+    }
+
+    .navBar{
+      padding: 1rem;
+      background-color: #373F51;
+      color: #EEE;
+      height: 46px;
+    }
+
+    .navBar a{
+      color: #A9BCD0;
+      text-align: center;
+      text-decoration: none;
+      font-family: sans-serif;
+      cursor: pointer;
+    }
+
+    .navBar a:hover{
+      color: #58A4B0;
+    }
+
+    .sticky-footer{
+      padding: 1rem;
+      background-color: #373F51;
+      color: #EEE;
+      margin-top: 30px;
+    }
+
+    .header{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      text-align: center;
+      justify-content: flex-start;
+
+    }
+
+    .menuBar{
+      list-style-type: none;
+      display: flex;
+      color: #A9BCD0;
+    }
+
+    .menuBar li{
+      padding: 0.5rem;
+      margin-left: 2rem;
+      color: #A9BCD0;
+      text-decoration: none;
+      font-family: sans-serif;
+    }
+
+    .logo{
+      height: 34px;
+      width: 50px;
+    }
+    .logo img{
+      height: 34px;
+      width: 50px;
+    }
+
+    .titleName{
+      font-family: 'Montserrat', sans-serif;
+      color: #58A4B0;
+      font-size: 30px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .stittle{
+      font-family: sans-serif;
+      color: #A9BCD0;
+      font-size: 20px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .presentacion{
+      font-family: sans-serif;
+      color: #D8DBE2;
+      font-size: 16px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .lenguajes{
+      display: flex;
+    }
+
+    .porcentaje{
+      font-family: sans-serif;
+      color: #D8DBE2;
+      font-size: 16px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    main{
+      flex-grow: 1;
+      font-weight: 700;
+      line-height: 24px;
+    }
+
+    hr{
+      background-color: #58A4B0;
+      height: 1px;
+    }
+
+    .lenguajes-container{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-items: center;
+      text-align: center;
+      justify-content: space-evenly;
+      padding: 1rem;
+    }
+
+    .lenguajes-item{
+        text-align: center;
+        margin-left: 10px;
+    }
+    .lenguajes-item img{
+      margin: 20px;
+      width: 68px;
+      height: 68px;
+    }
+
+    .idiomas{
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    .footer-flex{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .social-icon{
+      margin-left: 20px;
+      text-align: center;
+    }
+
+    .social-icon img{
+      width: 40px;
+      height: 40px;
+    }
+
+    .social-icon p{
+      font-family: sans-serif;
+      color: #A9BCD0;
+      font-size: 13px;
+    }
+
+
+
+
+
+
+    @media screen and (max-width: 1024px){
+
+      .lenguajes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+      }
+
+      .lenguajes-item{
+        flex: 0 0 50%;
+        margin-top: 0px;
+      }
+
+      .lenguajes-item img{
+        flex: 0 0 50%;
+        margin-bottom: 0px;
+      }
+
+      .lenguajes-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: space-evenly;
+      }
+
+      .idiomas{
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+
+
+
+
+  </style>
+
+
+  <body>
+    <header class="navBar header">
+      <div class="logo"><img src="itesm-icon.svg" alt=""></div>
+      <ul class="menuBar">
+        <li><a href="#">CV</a></li>
+        <li><a href="#">Programas</a></li>
+        <li><a href="#">Hobbies</a></li>
+        <li><a href="#">Gustos</a></li>
+      </ul>
+    </header>
+    <main>
+      <h1 class="titleName">Jose Ernesto Gomez Aguilar</h1>
+      <h3 class="stittle">Estudiante de ITC</h3>
+      <div class="presentacion">
+        <p>
+          Soy estudiante del quinto semestre de la carrera ITC en el Tecnologico de Monterrey, siempre me han gustado bastante las tecnologias de la computacion, me siento bastante atraido por la IA y la astronomia. Me gusta bastante estudiar idiomas, actualmente termine mis estudios en ingles y me encuentro estudiando japones.
+        </p>
+      </div>
+      <h2 class="stittle">Lenguajes</h2>
+      <hr>
+
+        <section class="lenguajes-container">
+          <section class="lenguajes">
+            <article class="lenguajes-item">
+              <img src="python-icon.png" alt="">
+            </article>
+            <article class="lenguajes-item">
+              <h2 class="stittle">Python</h2>
+              <p class="porcentaje"> 80% </p>
+            </article>
+          </section>
+
+          <section class="lenguajes">
+            <article class="lenguajes-item">
+              <img src="ruby-icon.png" alt="">
+            </article>
+            <article class="lenguajes-item">
+              <h2 class="stittle">Ruby</h2>
+              <p class="porcentaje"> 90% </p>
+            </article>
+          </section>
+
+          <section class="lenguajes">
+              <article class="lenguajes-item">
+                <img src="swift-icon.png" alt="">
+              </article>
+              <article class="lenguajes-item">
+                <h2 class="stittle">Swift</h2>
+                <p class="porcentaje"> 5% </p>
+              </article>
+            </section>
+
+            <section class="lenguajes">
+              <article class="lenguajes-item">
+                <img src="C++-icon.png" alt="">
+              </article>
+              <article class="lenguajes-item">
+                <h2 class="stittle">C++</h2>
+                <p class="porcentaje"> 70% </p>
+              </article>
+            </section>
+
+            <section class="lenguajes">
+              <article class="lenguajes-item">
+                <img src="SQL-icon.png" alt="">
+              </article>
+              <article class="lenguajes-item">
+                <h2 class="stittle">SQL</h2>
+                <p class="porcentaje"> 60% </p>
+              </article>
+            </section>
+
+            <section class="lenguajes">
+              <article class="lenguajes-item">
+                <img src="Csharp-icon.png" alt="">
+              </article>
+              <article class="lenguajes-item">
+                <h2 class="stittle">C#</h2>
+                <p class="porcentaje"> 75% </p>
+              </article>
+            </section>
+
+        </section>
+        <h2 class="stittle">Idiomas</h2>
+        <hr>
+        <section class="idiomas">
+          <article class="lenguajes-item">
+            <h2 class="stittle">Español</h2>
+            <p class="porcentaje"> Lengua Materna</p>
+          </article>
+
+          <article class="lenguajes-item">
+            <h2 class="stittle">Inglés</h2>
+            <p class="porcentaje"> Avanzado C1</p>
+          </article>
+
+          <article class="lenguajes-item">
+            <h2 class="stittle">Japonés</h2>
+            <p class="porcentaje"> Básico N2</p>
+          </article>
+        </section>
+    </main>
+    <footer class="sticky-footer">
+      <section class="footer-flex">
+        <article class="social-icon">
+          <a href="https://www.linkedin.com/in/joseernestogomez"><img src="linkedin-icon.png" alt=""></a>
+          <p>LinkedIn</p>
+        </article>
+
+        <article class="social-icon">
+          <a href="https://www.facebook.com/ernesto.gomezaguilar"><img src="facebook-icon.png" alt=""></a>
+          <p>Facebook</p>
+        </article>
+
+        <article class="social-icon">
+          <a href="https://twitter.com/monkeyjega"><img src="twitter-icon.png" alt=""></a>
+          <p>Twitter</p>
+        </article>
+
+        <article class="social-icon">
+          <a href="https://instagram.com/kpp_ga?r=nametag"><img src="instagram-icon.png" alt=""></a>
+          <p>Instagram</p>
+        </article>
+
+        <article class="social-icon">
+          <a href="https://www.reddit.com/u/SlaineK27/?utm_source=share&utm_medium=ios_app&utm_name=iossmf"><img src="reddit-icon.png" alt=""></a>
+          <p>Reddit</p>
+        </article>
+      </section>
+
+    </footer>
+  </body>
+</html>
