@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <style>
+    *,
+    *::after,
+    *::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
+
+    body{
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background-color: #1B1B1E;
+      margin: 0.5rem;
+    }
+
+    main{
+      flex-grow: 1;
+    }
+
+    .navBar{
+      padding: 1rem;
+      background-color: #373F51;
+      color: #EEE;
+      height: 46px;
+    }
+
+    .navBar a{
+      color: #A9BCD0;
+      text-align: center;
+      text-decoration: none;
+      font-family: sans-serif;
+      cursor: pointer;
+    }
+
+    .navBar a:hover{
+      color: #58A4B0;
+    }
+
+    .sticky-footer{
+      padding: 1rem;
+      background-color: #373F51;
+      color: #EEE;
+      margin-top: 30px;
+    }
+
+    .header{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      text-align: center;
+      justify-content: flex-start;
+
+    }
+
+    .menuBar{
+      list-style-type: none;
+      display: flex;
+      color: #A9BCD0;
+    }
+
+    .menuBar li{
+      padding: 0.5rem;
+      margin-left: 2rem;
+      color: #A9BCD0;
+      text-decoration: none;
+      font-family: sans-serif;
+    }
+
+    .logo{
+      height: 34px;
+      width: 50px;
+    }
+    .logo img{
+      height: 34px;
+      width: 50px;
+    }
+
+    .titleName{
+      font-family: 'Montserrat', sans-serif;
+      color: #58A4B0;
+      font-size: 30px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .stittle{
+      font-family: sans-serif;
+      color: #A9BCD0;
+      font-size: 20px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .resumen{
+      font-family: sans-serif;
+      color: #D8DBE2;
+      font-size: 16px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+
+
+    main{
+      flex-grow: 1;
+      font-weight: 700;
+      line-height: 24px;
+    }
+
+    hr{
+      background-color: #58A4B0;
+      height: 1px;
+    }
+
+
+
+
+    .footer-flex{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .social-icon{
+      margin-left: 20px;
+      text-align: center;
+    }
+
+    .social-icon img{
+      width: 40px;
+      height: 40px;
+    }
+
+    .social-icon p{
+      font-family: sans-serif;
+      color: #A9BCD0;
+      font-size: 13px;
+    }
+
+
+  .wrapper {
+    display: grid;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 80%;
+    height: 100vh;
+    gap: 10px;
+    background-color: #222;
+    grid-template-columns: repeat(8, auto);
+    grid-template-rows: repeat(8, auto);
+    gap: 10px;
+  }
+
+  .wrapper div{
+    border-radius: 5px;
+  }
+
+  .wrapper p{
+    width: 24px;
+  }
+
+  .a{
+    display: flex;
+    background-color: #373F51;
+    color: #58A4B0;
+    grid-row: 1 / span 3;
+    grid-column: 1 / span 2;
+
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+  }
+
+  .b{
+    background-color: #373F51;
+    color: #58A4B0;
+    grid-row: 4 / span 2;
+    grid-column: 1 / span 2;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+  }
+
+  .c{
+    background-color: #373F51;
+    color: #58A4B0;
+    grid-row: 6 / span 1;
+    grid-column: 1 / span 2;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .d{
+
+    background-color: #373F51;
+    color: #58A4B0;
+    grid-row: 7 / span 2;
+    grid-column: 1 / span 4;
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+  }
+
+  .e{
+    background-color: #373F51;
+    color: #58A4B0;
+    grid-row: 1 / span 2;
+    grid-column: 3 / span 4;
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+
+  .f{
+    background-color: #373F51;
+    color: #58A4B0;
+    grid-row: 3 / span 4;
+    grid-column: 3 / span 2;
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+  }
+
+  .g{
+
+    background-color: #373F51;
+    color: #58A4B0;
+    grid-row: 1 / span 2;
+    grid-column: 7 / span 2;
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .h{
+
+    background-color: #373F51;
+    color: #58A4B0;
+    grid-row: 3 / span 3;
+    grid-column: 5 / span 4;
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+  }
+
+  .i{
+    background-color: #373F51;
+    color: #58A4B0;
+    grid-row: 6 / span 3;
+    grid-column: 5 / span 3;
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .j{
+    background-color: #373F51;
+    color: #58A4B0;
+    grid-row: 6 / span 3;
+    grid-column: 8 / span 1;
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  </style>
+
+
+  <body>
+    <header class="navBar header">
+      <div class="logo"><img src="itesm-icon.svg" alt=""></div>
+      <ul class="menuBar">
+        <li><a href="index.html">CV</a></li>
+        <li><a href="Programas.html">Programas</a></li>
+        <li><a href="Hobbies.html">Hobbies</a></li>
+        <li><a href="Gustos.html">Gustos</a></li>
+      </ul>
+    </header>
+    <main>
+      <h1 class="titleName">Programas</h1>
+      <div class="resumen">
+        <p>
+          En esta página muestro cuáles son mis diferentes hobbies detro de mosaicos, cuyo tamaño representa su importancia para mi.
+        </p>
+      </div>
+      <hr>
+
+      <div class="wrapper">
+        <div class="a">
+          <p>I</p>
+          <p>D</p>
+          <p>I</p>
+          <p>O</p>
+          <p>M</p>
+          <p>A</p>
+          <p>S</p>
+        </div>
+        <div class="b">
+          <p>P</p>
+          <p>E</p>
+          <p>L</p>
+          <p>Í</p>
+          <p>C</p>
+          <p>U</p>
+          <p>L</p>
+          <p>A</p>
+          <p>S</p>
+        </div>
+        <div class="c">
+          <p>C</p>
+          <p>O</p>
+          <p>C</p>
+          <p>I</p>
+          <p>N</p>
+          <p>A</p>
+          <p>R</p>
+        </div>
+        <div class="d">
+          <p>M</p>
+          <p>A</p>
+          <p>N</p>
+          <p>G</p>
+          <p>A</p>
+        </div>
+        <div class="e">
+          <p>M</p>
+          <p>Ú</p>
+          <p>S</p>
+          <p>I</p>
+          <p>C</p>
+          <p>A</p>
+        </div>
+        <div class="f">
+          <p>A</p>
+          <p>N</p>
+          <p>I</p>
+          <p>M</p>
+          <p>E</p>
+        </div>
+        <div class="g">
+          <p>L</p>
+          <p>I</p>
+          <p>B</p>
+          <p>R</p>
+          <p>O</p>
+          <p>S</p>
+        </div>
+        <div class="h">
+          <p>V</p>
+          <p>I</p>
+          <p>D</p>
+          <p>E</p>
+          <p>O</p>
+          <p>J</p>
+          <p>U</p>
+          <p>E</p>
+          <p>G</p>
+          <p>O</p>
+          <p>S</p>
+        </div>
+        <div class="i">
+          <p>P</p>
+          <p>R</p>
+          <p>O</p>
+          <p>G</p>
+          <p>R</p>
+          <p>A</p>
+          <p>M</p>
+          <p>A</p>
+          <p>C</p>
+          <p>I</p>
+          <p>Ó</p>
+          <p>N</p>
+        </div>
+        <div class="j">
+          <p>N</p>
+          <p>A</p>
+          <p>T</p>
+          <p>A</p>
+          <p>C</p>
+          <p>I</p>
+          <p>Ó</p>
+          <p>N</p>
+        </div>
+      </div>
+
+
+    </main>
+    <footer class="sticky-footer">
+      <section class="footer-flex">
+        <article class="social-icon">
+          <a href="https://www.linkedin.com/in/joseernestogomez"><img src="linkedin-icon.png" alt=""></a>
+          <p>LinkedIn</p>
+        </article>
+
+        <article class="social-icon">
+          <a href="https://www.facebook.com/ernesto.gomezaguilar"><img src="facebook-icon.png" alt=""></a>
+          <p>Facebook</p>
+        </article>
+
+        <article class="social-icon">
+          <a href="https://twitter.com/monkeyjega"><img src="twitter-icon.png" alt=""></a>
+          <p>Twitter</p>
+        </article>
+
+        <article class="social-icon">
+          <a href="https://instagram.com/kpp_ga?r=nametag"><img src="instagram-icon.png" alt=""></a>
+          <p>Instagram</p>
+        </article>
+
+        <article class="social-icon">
+          <a href="https://www.reddit.com/u/SlaineK27/?utm_source=share&utm_medium=ios_app&utm_name=iossmf"><img src="reddit-icon.png" alt=""></a>
+          <p>Reddit</p>
+        </article>
+      </section>
+
+    </footer>
+  </body>
+</html>

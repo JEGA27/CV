@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <style>
+    *,
+    *::after,
+    *::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
+
+    body{
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background-color: #1B1B1E;
+      margin: 0.5rem;
+    }
+
+    main{
+      flex-grow: 1;
+    }
+
+    .navBar{
+      padding: 1rem;
+      background-color: #373F51;
+      color: #EEE;
+      height: 46px;
+    }
+
+    .navBar a{
+      color: #A9BCD0;
+      text-align: center;
+      text-decoration: none;
+      font-family: sans-serif;
+      cursor: pointer;
+    }
+
+    .navBar a:hover{
+      color: #58A4B0;
+    }
+
+    .sticky-footer{
+      padding: 1rem;
+      background-color: #373F51;
+      color: #EEE;
+      margin-top: 30px;
+    }
+
+    .header{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      text-align: center;
+      justify-content: flex-start;
+
+    }
+
+    .menuBar{
+      list-style-type: none;
+      display: flex;
+      color: #A9BCD0;
+    }
+
+    .menuBar li{
+      padding: 0.5rem;
+      margin-left: 2rem;
+      color: #A9BCD0;
+      text-decoration: none;
+      font-family: sans-serif;
+    }
+
+    .logo{
+      height: 34px;
+      width: 50px;
+    }
+    .logo img{
+      height: 34px;
+      width: 50px;
+    }
+
+    .titleName{
+      font-family: 'Montserrat', sans-serif;
+      color: #58A4B0;
+      font-size: 30px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .stittle{
+      font-family: sans-serif;
+      color: #A9BCD0;
+      font-size: 20px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .resumen{
+      font-family: sans-serif;
+      color: #D8DBE2;
+      font-size: 16px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+
+
+    main{
+      flex-grow: 1;
+      font-weight: 700;
+      line-height: 24px;
+    }
+
+    hr{
+      background-color: #58A4B0;
+      height: 1px;
+    }
+
+
+    .footer-flex{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .social-icon{
+      margin-left: 20px;
+      text-align: center;
+    }
+
+    .social-icon img{
+      width: 40px;
+      height: 40px;
+    }
+
+    .social-icon p{
+      font-family: sans-serif;
+      color: #A9BCD0;
+      font-size: 13px;
+    }
+
+    .programa{
+      display: flex;
+      margin-top: 40px;
+    }
+
+    .programa-contenido{
+      font-family: sans-serif;
+      color: #D8DBE2;
+      font-size: 16px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    .programas-container{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-items: center;
+      text-align: center;
+      justify-content: space-evenly;
+      padding: 1rem;
+    }
+
+    .programa-item{
+        text-align: justify;
+        margin-left: 10px;
+    }
+
+    .programa-item img{
+      /*
+      margin: 20px;
+      width: 68px;
+      height: 68px;
+      */
+      max-height: 160px;
+    }
+
+    .programa-reverse{
+      flex-direction: row-reverse;
+    }
+
+
+
+
+
+
+    @media screen and (max-width: 1024px){
+
+      .programa{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+
+      }
+
+      .programa-item{
+        flex: 0 0 50%;
+        margin-top: 0px;
+      }
+
+      .programa-item img{
+        flex: 0 0 50%;
+        margin-bottom: 0px;
+      }
+
+      .programa-item .stittle{
+        text-align: center;
+      }
+
+      .programas-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: space-evenly;
+      }
+
+
+      /*
+      .lenguajes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+      }
+
+      .lenguajes-item{
+        flex: 0 0 50%;
+        margin-top: 0px;
+      }
+
+      .lenguajes-item img{
+        flex: 0 0 50%;
+        margin-bottom: 0px;
+      }
+
+      .lenguajes-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: space-evenly;
+      }
+
+      .idiomas{
+        flex-direction: column;
+        align-items: center;
+      }
+      */
+    }
+
+
+
+
+
+  </style>
+
+
+  <body>
+    <header class="navBar header">
+      <div class="logo"><img src="itesm-icon.svg" alt=""></div>
+      <ul class="menuBar">
+        <li><a href="index.html">CV</a></li>
+        <li><a href="Programas.html">Programas</a></li>
+        <li><a href="Hobbies.html">Hobbies</a></li>
+        <li><a href="Gustos.html">Gustos</a></li>
+      </ul>
+    </header>
+    <main>
+      <h1 class="titleName">Programas</h1>
+      <div class="resumen">
+        <p>
+          En esta página desscribo mis programas favoritos que he hecho a lo largo de mi carrera en diferentes lenguajes de programación.
+        </p>
+      </div>
+      <hr>
+
+      <section class="programs-container">
+
+          <section class="programa">
+            <article class="programa-item">
+              <img src="funko-icon.png" alt="">
+            </article>
+            <article class="programa-item">
+              <h2 class="stittle">Funko</h2>
+              <p class="programa-contenido"> Para este programa se desarrolló en python un prototipo de página web de los productos  de Funko agregando nuevos métodos y filtros de bússqueda de sus productos, además de una pequeña base de datos con una cierta cantidad de productos de diferentes categorías.</p>
+            </article>
+          </section>
+
+          <section class="programa programa-reverse">
+            <article class="programa-item">
+              <img src="apple-icon.png" alt="">
+            </article>
+            <article class="programa-item">
+              <h2 class="stittle">App IOS</h2>
+              <p class="programa-contenido"> Mediante la herramienta xcode y el lenguaje swift se desarrolló una aplicación para dispositivos IOS para una clínica de tanatología, en la cual los usuarios llevan un control de los servicios, las sesiones y citas que se llevan a cabo en la clínica, así como también se puede solicitar el servicio de ambulancia y subir los expedientes de los pacientes.</p>
+            </article>
+          </section>
+
+          <section class="programa">
+            <article class="programa-item">
+              <img src="netflix-icon.png" alt="">
+            </article>
+            <article class="programa-item">
+              <h2 class="stittle">Streaming de Video</h2>
+              <p class="programa-contenido"> Mediante programación orientada a objetos con el lenguaje C++ se desarrolló un programa que imita el funcionamiento de las plataformas de video, contanto con diferentes clases como "Película" o "Serie" almacenando cada una videos e información de ellos como el rating, permitiendo al usuario buscar videos ya sea mediante el título de la seria o película, así como ver su rating y más información de cada video. </p>
+            </article>
+          </section>
+
+          <section class="programa programa-reverse">
+            <article class="programa-item">
+              <img src="unity-icon.png" alt="">
+            </article>
+            <article class="programa-item">
+              <h2 class="stittle">Videojuego</h2>
+              <p class="programa-contenido"> Mediante el motor de videojuegos Unity y código en C# se desarrolló un videojuego en 3D con temática de escape para impulsar a los usuarios a estudiar carreras de ingeniería. El videojuego se basa en una inundación en una ciudad, por lo que el personaje se encuentra atrapado en el edificio así que tiene que resolver retos relacionados con programación para ir subiendo de piso hasta lograr llegar a la asotea y ser rescatado escapando de la inundación</p>
+            </article>
+          </section>
+
+          <section class="programa">
+            <article class="programa-item">
+              <img src="web-icon.png" alt="">
+            </article>
+            <article class="programa-item">
+              <h2 class="stittle">Página Web</h2>
+              <p class="programa-contenido"> Para la elaboración del videojuego se creó también una página Web en la cual las estadísticas del videojuego de cada usuario se subían para mostrarlas así como para generar tablas de ranking. Para hacer esto posible, se utilizó SQL para mantener el flujo de los datos desde el videojuego hacia la base de datos y después a la página Web, de esta manera el sitio automáticamente recuperaba los datos de cada sesión del videojuego.</p>
+            </article>
+          </section>
+
+
+
+      </section>
+
+    </main>
+    <footer class="sticky-footer">
+      <section class="footer-flex">
+        <article class="social-icon">
+          <a href="https://www.linkedin.com/in/joseernestogomez"><img src="linkedin-icon.png" alt=""></a>
+          <p>LinkedIn</p>
+        </article>
+
+        <article class="social-icon">
+          <a href="https://www.facebook.com/ernesto.gomezaguilar"><img src="facebook-icon.png" alt=""></a>
+          <p>Facebook</p>
+        </article>
+
+        <article class="social-icon">
+          <a href="https://twitter.com/monkeyjega"><img src="twitter-icon.png" alt=""></a>
+          <p>Twitter</p>
+        </article>
+
+        <article class="social-icon">
+          <a href="https://instagram.com/kpp_ga?r=nametag"><img src="instagram-icon.png" alt=""></a>
+          <p>Instagram</p>
+        </article>
+
+        <article class="social-icon">
+          <a href="https://www.reddit.com/u/SlaineK27/?utm_source=share&utm_medium=ios_app&utm_name=iossmf"><img src="reddit-icon.png" alt=""></a>
+          <p>Reddit</p>
+        </article>
+      </section>
+
+    </footer>
+  </body>
+</html>
